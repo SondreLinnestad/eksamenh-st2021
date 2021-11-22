@@ -1,0 +1,231 @@
+/* prefixes */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+/* navigation bar at the top of the page */
+
+.navbar{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    font-weight: 900;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    margin: 15px;
+}
+.navbar ul li{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 7px 20px;
+    transition: .8s;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px 10px 5px;
+}
+
+/* code for cirkles */
+
+.dot1 {
+    position: absolute;
+    height: 30rem;
+    width: 30rem;
+    background-color: rgb(33, 148, 187);
+    border-radius: 50%;
+    margin-left: -50rem;
+    margin-top: -10rem;
+  }
+  .dot2 {
+    position: absolute;
+    height: 30rem;
+    width: 30rem;
+    background-color: rgb(255, 152, 83);
+    border-radius: 50%;
+    margin-left: -30rem;
+    margin-top: 20rem;
+  }
+
+/* main part */
+
+.intro {
+    position: relative;
+    text-align: center;
+  }
+
+.intro h1{
+    font: 1rem sans-serif;
+    font-weight: bold;
+    position: absolute;
+    left: 8rem;
+    top: 15rem;
+}
+.intro h2{
+    font: 3rem sans-serif;
+    font-weight: bold;
+    position: absolute;
+    left: 8rem;
+    top: 17rem;
+    width: 27rem;
+    text-align: left;
+}
+
+.intro img{
+    margin-top: 6.5rem;
+    margin-left: 28rem;
+    width: 40rem;
+}
+
+.essay{
+    position: absolute;
+    margin-top: 40rem;
+    width: 60rem;
+    left: 18rem;
+    margin-bottom: 10rem;
+    border-bottom: black solid 1px;
+}
+
+.essay .heading{
+    border-bottom: black solid 1px;
+    font-size: 3rem;
+}
+
+.essay .part1{
+    margin-top: 2rem;
+    width: 25rem;
+}
+
+.essay .fakenews{
+    position: absolute;
+    width: 23rem;
+    right: 0rem;
+    top: 5rem;
+}
+
+.essay .heading2{
+    border-bottom: black solid 1px;
+    font-size: 3rem;
+}
+
+.newsstand{
+    height: 30rem;
+    margin-top: 4rem;
+
+}
+
+.part2{
+    margin-top: 4rem;
+    padding-bottom: 5rem;
+    width: 25rem;
+    float: right;
+}
+
+.essay .heading3{
+    border-bottom: black solid 1px;
+    font-size: 3rem;
+}
+.sources{
+    margin-top: -8rem;
+    width: 25rem;
+    float: right;
+    margin-bottom: 5rem;
+}
+.part3{
+    width: 25rem;
+}
+
+/* footer */
+
+.sosiale{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: transparent;
+    text-align: center;
+    background: rgba(1,1,1,0.5);
+    list-style: none;
+    color: white;
+
+}
+.sosiale img{
+    height: 30px;
+    margin-left: 30px;
+    opacity: 0.7;
+}
+.sosiale img:hover{
+    opacity: 1;
+}
+
+
+
+
+/*Tablet*/
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+
+    .intro img{
+        display: none;
+    }
+    .intro{
+        right: 20rem;
+    }
+    .essay{
+        position: absolute;
+        left: 0rem;
+        width: 800px;
+    }
+    .essay .fakenews{
+        width: 20rem;
+    }
+    .sources{
+        padding-bottom: 5rem;
+    }
+}
+
+/*Phone*/
+@media screen and (max-width: 800px) {
+
+    .intro img{
+        display: none;
+    }
+    .intro{
+        right: 20rem;
+    }
+
+    .essay{
+        position: absolute;
+        left: 0rem;
+        width: 400px;
+        margin-left: 2rem;
+    }
+    .essay .fakenews{
+        margin-top: 35rem;
+        width: 17rem;
+    }
+    .heading2{
+        margin-top: 30rem;
+    }
+    .sources{
+        padding-bottom: 5rem;
+        margin-top: 0;
+    }
+
+}
