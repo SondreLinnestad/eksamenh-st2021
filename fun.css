@@ -244,4 +244,7 @@ footer{
         margin-left: auto;
         margin-right: auto;
     }
+    .centercontent{
+        width: 400px;
+    }
 }
