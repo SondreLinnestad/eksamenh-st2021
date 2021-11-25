@@ -217,8 +217,9 @@ body{
         margin-left: 2rem;
     }
     .essay .fakenews{
-        margin-top: 35rem;
-        width: 17rem;
+        margin-top: 40rem;
+        width: 15rem;
+        margin-right: 4rem;
     }
     .heading2{
         margin-top: 30rem;
@@ -226,6 +227,9 @@ body{
     .sources{
         padding-bottom: 5rem;
         margin-top: 0;
+    }
+    .navbar ul li a{
+        padding: 7px 5px;
     }
 
 }
