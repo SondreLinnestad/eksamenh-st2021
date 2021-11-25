@@ -71,7 +71,7 @@ body{
 
 .intro{
     position: relative;
-    margin-top: 500px;
+    margin-top: 32rem;
     height: 100px;
     width: 500px;
     background:rgba(1,1,1,0.5);
@@ -109,6 +109,12 @@ body{
 
     .navbar ul li a{
         padding: 7px 5px;
+    }
+    .intro{
+        width: 350px;
+    }
+    .heading{
+        width: 350px;
     }
 
 }
