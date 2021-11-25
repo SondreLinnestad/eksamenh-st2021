@@ -5,17 +5,25 @@
     box-sizing: border-box;
 }
 
-body{ 
-    background-image: linear-gradient(to bottom right, #4affde, #5b9dff, #d06bff, #ff34d2 100%);
-    background-size: 200% 200%;
-    animation: movingGradient 5s linear infinite alternate;
+body{
+    background: rgb(155,255,193);
+    background: linear-gradient(90deg, rgba(155,255,193,1) 0%, rgba(255,129,234,0.5788690476190477) 50%, rgba(166,255,255,1) 100%);
+    font-family: cursive;
 }
 
-@keyframes movingGradient {
-    from {background-position: 0 0; }
-    to {background-position: 100% 100% ;}
+.centercontent{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30rem
+}
+.mainpart{
+    background-color: violet;
+    width: 50rem;
+    margin-top: 5rem;
+    margin-left: -10rem;
 }
 
+/* menu button */
 
 .button {
     background-color: transparent;
@@ -62,251 +70,178 @@ body{
       box-shadow: 2px 2px 4px 0px;
     }
 
-    h1{
-        font-family: 'montserrat', sans-serif;
-        font-size: 4rem;
-        padding: 2%;
+    header h1{
+        display: flex;
+        justify-content: center;
+        margin-top: 10rem;
     }
-    h2{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 2.2rem;
-        padding: 2%;
+
+    header p{
+        display: flex;
+        justify-content: center;
     }
-    h3{
-        font-family: 'Montserrat', sans-serif;
-        padding: 2%
-    }
-    p{
-        padding-left: 2%;
-        line-height: 1.5;
-        max-width: 70ch;
-    }
+
+/* flip box -  some of the flip box code was code implimented from w3schools.com */
+.flip1 {
+    position: relative;
+    width: 30rem;
+    height: 20rem;
+    margin-top: 3rem;
+    margin-left: 9rem;
+    margin-bottom: 3rem;
     
-    
-    header {
-        height: 55vh;
-     
-        margin: 0 auto;
+  }
+  
+  .flip1-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    border: solid black 1px;
+  }
+  
+  .flip1:hover .flip1-inner {
+    transform: rotatey(180deg);
+  }
+  
+  .flip1-front, .flip1-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip1-back {
+    background-color: transparent;
+    transform: rotateY(180deg);
+    border: 7px;
+  }
+
+
+/* maint content */
+.header h1{
+    font-size: 2.5rem;
+}
+.header p{
+    font-size: 1.5rem;
+}
+
+/* part one */
+
+.part1 h1{
+    border-bottom: solid black 1px;
+    text-align: center;
+    font-size: 3rem;
+}
+.part1 p{
+    margin-left: .5rem;
+    margin-top: .5rem;
+    margin-right: .5rem;
+    margin-bottom: 2rem;
+}
+
+/* part two */
+
+.part2{
+    float: left;
+    width: 50%;
+    background-color: pink;
+}
+.part2 h1{
+    text-align: center;
+}
+.part2 p{
+    margin-left: .5rem;
+    width: 90%;
+    text-align: center;
+}
+
+/* part three */
+
+.part3{
+    background-color: violet;
+    float: right;
+    width: 50%;
+}
+.part3 h1{
+    text-align: center;
+}
+.part3 p{
+    margin-left: .5rem;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* part four */
+
+.part4{
+    padding: 15%;
+    margin-top: 5rem;
+}
+
+/* footer */
+
+footer{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+
+
+/*Tablet*/
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+
+    .mainpart{
+        width: 35rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .centercontent{
+        margin-left: auto;
+        margin-right: auto;
+        width: 35rem
+    }
+    .flip1{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .part4{
         position: relative;
-        padding-top: 3rem;
-    
-        width: 100%;
-    
+        margin-left: -5.3rem;
     }
     
-    header div {
-        
-        position: absolute;
-        bottom: -4rem;
-        padding-bottom: 1rem;    
-        box-sizing: border-box; 
-        margin: 0 0.5rem;
-        padding-top: 3rem;
-        color: white;
-        text-align: center;
-        height: 65vh;
-        margin: 0 auto;
-    }
-    
-    main { 
-    
-        background-color: #d06bff;
-        padding: 0 0 2rem 0;
-    }
-    
-    #intro-container {
-        box-sizing: border-box;
-        background-color: #d06bff ;
-        margin: 6rem auto;
-        padding: 2rem 2rem;
-    }
-    
-    #intro-container div ul > li:nth-child(1) {
-        list-style: "\2648 ";
-        list-style-position: outside;
-    }
-    
-    #intro-container div ul > li:nth-child(2) {
-        list-style: "\2649 ";
-        list-style-position: outside;
-    }
-    
-    #intro-container div ul > li:nth-child(3) {
-        list-style:  "\264A ";
-        list-style-position: outside;
-    }
-    
-    article:nth-child(2){
-        box-sizing: border-box;
-        padding: 0rem 2rem;   
-        border-bottom: 0.2px solid darkgray; 
-        margin: 2rem 0 0 0;  
-    }
-    
-    article:nth-child(3){
-        box-sizing: border-box;
-        padding: 0rem 3rem;
-        display: table;   
-        margin: 3rem 0 0 0;   
-    }
-    
-    article:nth-child(4){
-        box-sizing: border-box;
-        padding: 0rem 2rem;
-        margin: 2rem 0 0 0;  
-    }
-    
-    img {
-        display: block;
-        max-width: 100%;
-        margin: 0 0 1.8rem 0;  
-        box-sizing: border-box;
-        filter: drop-shadow(2px 4px 8px #585858);
-    }
-    
-    video {
-        width: 100%;
-        height: auto;
-      }
-    
-    footer{
-        width: 100%;
-        background-color: darkgrey;
-        clear: both;
+}
+
+
+
+/*Phone*/
+@media screen and (max-width: 800px) {
+    .part4 video{
         position: relative;
-        height: 100px;
-        color: white;
-        text-align: center;
-        }
-        
-    @media screen and (min-width: 600px) and (max-width: 960px) {
-        body {
-                font-size: 16px;
-        }
-        
-        header {
-                height: 65vh;
-                margin: 0 auto;
-        }
-        
-        header div {
-            box-sizing: border-box;
-            left: 7.5%;
-            margin: 0 auto;
-    
-        }
-        
-        header div p {
-            margin: 0 auto;
-        }
-        
-        header div, main, footer {
-            width: 85%;
-        }
-        
-        main {
-                margin: 2rem auto;
-           }
-        
-           article {
-            column-count: 2;
-            column-width: auto;
-        }
-    
-        article:nth-child(2) img {
-            float: right;
-        }
-    
-       
-    
-       
-        article:nth-child(3) div {
-            float: center;
-            max-width: 100%;
-        }
-    
-        article:nth-child(4) img {
-            margin: auto;
-            padding: auto;
-        }
-        
-            #intro-container {
-                background: linear-gradient(90deg,  #ff34d2 50%, #d06bff 50%);
-                margin-bottom: 0;
-                border-bottom: 0.1px solid darkgray;
-    
-            }     
-        
-            article:nth-child(3) {
-                border-bottom: 0.1px solid darkgray;
-            }
-        
-            footer {
-                margin: 0 auto;
-            }
-        }
-        
-    
-    @media screen and (min-width: 960px) and (max-width:2000px) {
-        body {
-            font-size: 24px;
-        }
-    
-        main {
-            margin: 2rem auto;
-        }
-    
-        header div {
-            margin: 0 auto;
-            left: 15%;
-            box-sizing: border-box;
-            height: 65vh;
-    
-        }
-    
-        header div, main, footer {
-            width: 70%;
-        }
-    
-        article {
-            column-count: 2;
-            column-width: auto;
-        }
-    
-        article:nth-child(2) img {
-            float: right;
-        }
-    
-        article:nth-child(3) {
-            padding: 2rem 2rem;
-            margin: auto;
-        }
-    
-        article:nth-child(3) img {
-            margin: auto;
-            padding: auto;
-            max-width: 100%;  
-            float: center;
-        }
-    
-        article:nth-child(3) div {
-            float: center;
-            max-width: 100%;
-        }
-    
-        article:nth-child(4) img {
-            margin: auto;
-            padding: auto;
-        }
-    
-        #intro-container {
-            background: linear-gradient(90deg, #ff34d2 50%, #d06bff 50%);
-            border-bottom: 0.1px solid darkgray;
-            margin-bottom: 0;
-        }     
-    
-        footer {
-            margin: auto;
-        }
+        margin-left: -5.3rem;
     }
-    
+    .mainpart{
+        width: 31.5rem;
+        margin-left: 0rem;
+        margin-right: auto;
+    }
+
+    .centercontent{
+        margin-left: auto;
+        margin-right: auto;
+        width: 35rem
+    }
+    .flip1{
+        margin-left: .5rem;
+    }
+    .flip1-front{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

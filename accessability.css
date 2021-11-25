@@ -1,3 +1,4 @@
+/* prefixes */
 *{
     margin: 0%;
     padding: 0%;
@@ -9,6 +10,8 @@ body{
     justify-content: center;
     padding-bottom: 5rem;
 }
+
+/* navigation bar at the top of the page */
 
 .navbar{
     display: flex;
@@ -39,6 +42,7 @@ body{
     color: black;
     box-shadow: 2px 2px 10px 5px;
 }
+/* code for cirkles */
 
 .dot1 {
     position: absolute;
@@ -59,7 +63,7 @@ body{
     margin-top: 20rem;
   }
 
-/* main part */
+/* main heading plus picture  */
 
 .intro {
     position: relative;
@@ -87,8 +91,76 @@ body{
     margin-top: 6.5rem;
     margin-left: 28rem;
     width: 40rem;
+}
+
+/* first paragraph */
+
+.essay{
+    position: absolute;
+    margin-top: 40rem;
+    width: 60rem;
+    left: 18rem;
+    margin-bottom: 10rem;
+    border-bottom: black solid 1px;
+}
+
+.essay .heading{
+    border-bottom: black solid 1px;
+    font-size: 3rem;
+}
+
+.essay .part1{
+    margin-top: 2rem;
+    width: 25rem;
+    margin-bottom: 4rem;
 
 }
+
+.essay .tablet{
+    position: absolute;
+    width: 30rem;
+    right: 0rem;
+    top: 5rem;
+}
+
+/* second paragraph */
+
+.essay .heading2{
+    border-bottom: black solid 1px;
+    font-size: 3rem;
+}
+
+.test{
+    width: 25rem;
+    margin-top: 4rem;
+
+}
+
+.part2{
+    margin-top: 4rem;
+    padding-bottom: 5rem;
+    width: 25rem;
+    float: right;
+}
+
+/* third paragraph */
+
+.essay .heading3{
+    border-bottom: black solid 1px;
+    font-size: 3rem;
+}
+.coding{
+    margin-top: 2rem;
+    width: 25rem;
+    float: right;
+    margin-bottom: 5rem;
+}
+.part3{
+    margin-top: 3rem;
+    width: 25rem;
+}
+
+/* footer*/
 
 .sosiale{
     position: fixed;
@@ -115,24 +187,52 @@ body{
 
 
 /*Tablet*/
-@media screen and (min-width: 600px) and (max-width: 960px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+
+
 
     .intro img{
         display: none;
     }
     .intro{
         right: 20rem;
+    }
+    .essay{
+        position: absolute;
+        left: 0rem;
+        width: 800px;
+    }
+    .essay .tablet{
+        width: 25rem;
     }
 }
 
 /*Phone*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
     .intro img{
         display: none;
     }
     .intro{
         right: 20rem;
+    }
+
+    .essay{
+        position: absolute;
+        left: 0rem;
+        width: 400px;
+        margin-left: 2rem;
+    }
+    .essay .tablet{
+        margin-top: 25rem;
+        margin-left: 2rem;
+        width: 25rem;
+    }
+    .heading2{
+        margin-top: 30rem;
+    }
+    .part3{
+        padding-bottom: 5rem;
     }
 
 }
