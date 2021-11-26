@@ -84,10 +84,11 @@ body{
 /* flip box -  some of the flip box code was code implimented from w3schools.com */
 .flip1 {
     position: relative;
-    width: 30rem;
-    height: 20rem;
+    align-items: center;
+    margin-left: 13rem;
+    width: 25rem;
+    height: 17rem;
     margin-top: 3rem;
-    margin-left: 9rem;
     margin-bottom: 3rem;
     
   }
@@ -99,7 +100,6 @@ body{
     text-align: center;
     transition: 0.6s;
     transform-style: preserve-3d;
-    border: solid black 1px;
   }
   
   .flip1:hover .flip1-inner {
@@ -222,9 +222,11 @@ footer{
 
 /*Phone*/
 @media screen and (max-width: 800px) {
+
     .part4 video{
         position: relative;
         margin-left: -5.3rem;
+        width: 60%;
     }
     .mainpart{
         width: 31.5rem;
@@ -239,6 +241,9 @@ footer{
     }
     .flip1{
         margin-left: -2.5rem;
+        position: relative;
+        align-items: center;
+        margin-left: 0rem;
     }
     .flip1-front{
         margin-left: auto;
@@ -250,4 +255,9 @@ footer{
     .mainpart{
         width: 400px;
     }
+    .part4{
+        position: relative;
+        margin-left: -5.3rem;
+    }
+
 }
