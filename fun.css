@@ -179,7 +179,7 @@ body{
 /* part four */
 
 .part4{
-    padding: 15%;
+    padding: 23%;
     margin-top: 5rem;
 }
 
@@ -213,7 +213,7 @@ footer{
     }
     .part4{
         position: relative;
-        margin-left: -5.3rem;
+        margin-left: -4rem;
     }
     
 }
@@ -257,7 +257,7 @@ footer{
     }
     .part4{
         position: relative;
-        margin-left: -5.3rem;
+        margin-left: -.4rem;
     }
 
 }
